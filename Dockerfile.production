@@ -8,4 +8,4 @@ COPY ./app.js /var/www/app/app.js
 
 RUN npm install
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "start:prod"]
