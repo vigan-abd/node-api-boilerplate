@@ -1,0 +1,11 @@
+FROM node:8.9.1
+
+WORKDIR /var/www/app
+
+COPY ./src /var/www/app/src
+COPY ./package.json /var/www/app/package.json
+COPY ./app.js /var/www/app/app.js
+
+RUN npm install
+
+CMD ["npm", "run", "start"]

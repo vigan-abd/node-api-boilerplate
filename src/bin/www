@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+const app = require('../../app');
+const config = require('../config');
+const loggerService = app.container.resolve('loggerService');
+const HttpServer = require('http').Server;
+
+/**
+ * Get port from environment and store in Express.
+ */
+app.set('port', config.PORT);
+
+/**
+ * Create HTTP server.
+ */
+const server = HttpServer(app);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+server.listen(config.PORT, config.HOST, err => {
+  if (err) {
+    loggerService.log('error', err, {tags: 'cron'});
+  }
+  loggerService.log('info', `[STARTUP] Server listening on ${config.HOST}:${config.PORT}`, {tags: 'startup,network'});
+});

@@ -1,0 +1,32 @@
+version: '3.3'
+
+services:
+  node_app_db:
+    image: mongo:4.0
+    container_name: node_app_db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_DATABASE: node_app
+    ports:
+      - 37017:27017
+      - 37018:27018
+
+  node_app_server:
+    build: .
+    image: node_app_server:1.0
+    container_name: node_app_server
+    working_dir: /var/www/app
+    depends_on:
+      - node_app_db
+    volumes:
+      - ./src:/var/www/app/src
+      - ./docs:/var/www/app/docs
+      - ./package.json:/var/www/app/package.json
+      - ./app.js:/var/www/app/app.js
+    ports:
+      - 4001:4001
+      - 4002:4002
+    environment:
+      - NODE_ENV=development
+      - PUBLIC_URL=/
