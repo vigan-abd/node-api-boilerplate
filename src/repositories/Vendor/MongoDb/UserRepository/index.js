@@ -1,7 +1,5 @@
-const IUserRepository = require('../../../Interfaces/IUserRepository');
-const UserDefinedException = require("../../../../models/Business/Exeption/UserDefinedException");
-
-const User = require('../../../../models/Domain/User');
+const IUserRepository = require('@repositories/Interfaces/IUserRepository');
+const User = require('@models/Domain/User');
 
 class UserRepository extends IUserRepository {
   parseRecord(raw) {

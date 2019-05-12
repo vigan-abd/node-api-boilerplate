@@ -10,7 +10,7 @@
 
 const envFile = require('node-env-file');
 const path = require('path');
-const env = require('../helpers/EnvHelper');
+const env = require('@helpers/EnvHelper');
 
 try {
   envFile(path.join(__dirname, process.env.NODE_ENV + '.env'));

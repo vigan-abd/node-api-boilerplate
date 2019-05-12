@@ -1,5 +1,5 @@
-const InterfaceException = require('../../models/Business/Exeption/InterfaceException');
-const User = require('../../models/Domain/User');
+const InterfaceException = require('@models/Business/Exeption/InterfaceException');
+const User = require('@models/Domain/User');
 
 
 class IUserRepository {

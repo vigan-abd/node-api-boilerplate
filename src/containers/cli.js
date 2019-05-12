@@ -10,7 +10,7 @@ const container = awilix.createContainer({
 
 // Services
 container.register({
-  loggerService: asClass(require('../services/LoggerService'), {
+  loggerService: asClass(require('@services/LoggerService'), {
     lifetime: Lifetime.SINGLETON,
     injectionMode: InjectionMode.CLASSIC
   })
@@ -19,7 +19,7 @@ container.register({
 
 // Commands
 container.register({
-  printArgs: asClass(require('../console/commands/PrintArgs'), {
+  printArgs: asClass(require('@console/commands/PrintArgs'), {
     lifetime: Lifetime.SINGLETON,
     injectionMode: InjectionMode.CLASSIC
   })

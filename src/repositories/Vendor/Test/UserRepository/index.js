@@ -1,8 +1,8 @@
 const seed = require('./seed');
-const IUserRepository = require('../../../Interfaces/IUserRepository');
-const UserDefinedException = require("../../../../models/Business/Exeption/UserDefinedException");
+const IUserRepository = require('@repositories/Interfaces/IUserRepository');
+const UserDefinedException = require("@models/Business/Exeption/UserDefinedException");
 
-const User = require('../../../../models/Domain/User');
+const User = require('@models/Domain/User');
 
 const users = seed(); // Generate seeds
 

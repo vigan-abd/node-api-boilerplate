@@ -1,6 +1,6 @@
-const env = require('../EnvHelper');
+const env = require('@helpers/EnvHelper');
 const mongoose = require("mongoose");
-const config = require('../../config');
+const config = require('@config');
 
 mongoose.connect(
   config.DB_CONNECTION_STRING, {

@@ -24,6 +24,7 @@ services:
       - ./docs:/var/www/app/docs
       - ./package.json:/var/www/app/package.json
       - ./app.js:/var/www/app/app.js
+      - ./app.log:/var/www/app/app.log
     ports:
       - 4001:4001
       - 4002:4002

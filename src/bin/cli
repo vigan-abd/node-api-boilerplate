@@ -3,6 +3,7 @@
 /**
  * Module dependencies.
  */
+require('module-alias/register');
 
- const kernel = require('../console/kernel');
- kernel();
+const kernel = require('../console/kernel');
+kernel();

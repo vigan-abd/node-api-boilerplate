@@ -1,6 +1,6 @@
 const fs = require('fs');
 const https = require('https');
-const config = require('../../config');
+const config = require('@config');
 const socketIO = require('socket.io');
 
 let srv = config.SOCKET_PORT;

@@ -1,6 +1,6 @@
-const { listen } = require('../../helpers/EventHelper');
-const UserLoggedInEvent = require('../../events/UserLoggedInEvent');
-const UserUpdatedEvent = require('../../events/UserUpdatedEvent');
+const { listen } = require('@helpers/EventHelper');
+const UserLoggedInEvent = require('@events/UserLoggedInEvent');
+const UserUpdatedEvent = require('@events/UserUpdatedEvent');
 
 const register = (container) => {
   // SIGNATURES

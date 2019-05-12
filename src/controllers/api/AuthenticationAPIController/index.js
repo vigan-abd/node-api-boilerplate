@@ -1,7 +1,7 @@
-const UserService = require('../../../services/UserService'); // USED ONLY FOR INTELLISENSE ISSUES
-const UserLoggedInEvent = require('../../../events/UserLoggedInEvent');
-const UserUpdatedEvent = require('../../../events/UserUpdatedEvent');
-const event = require('../../../helpers/EventHelper').event;
+const UserService = require('@services/UserService'); // USED ONLY FOR INTELLISENSE ISSUES
+const UserLoggedInEvent = require('@events/UserLoggedInEvent');
+const UserUpdatedEvent = require('@events/UserUpdatedEvent');
+const event = require('@helpers/EventHelper').event;
 
 class AuthenticationAPIController {
 

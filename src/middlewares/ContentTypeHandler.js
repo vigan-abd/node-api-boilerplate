@@ -1,6 +1,6 @@
 
-const Serializer = require('../helpers/Serializer');
-const HttpNotAcceptableException = require('../models/Business/Exeption/HttpNotAcceptableException');
+const Serializer = require('@helpers/Serializer');
+const HttpNotAcceptableException = require('@models/Business/Exeption/HttpNotAcceptableException');
 
 class ContentTypeHandler {
   /**

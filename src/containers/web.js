@@ -12,14 +12,14 @@ const container = awilix.createContainer({
 
 // LISTENERS
 container.register({
-  UserLoggedInEventListener: asClass(require('../listeners/UserLoggedInEventListener'), {
+  UserLoggedInEventListener: asClass(require('@listeners/UserLoggedInEventListener'), {
     lifetime: Lifetime.SINGLETON,
     injectionMode: InjectionMode.CLASSIC
   })
 });
 
 container.register({
-  UserUpdatedEventListener: asClass(require('../listeners/UserUpdatedEventListener'), {
+  UserUpdatedEventListener: asClass(require('@listeners/UserUpdatedEventListener'), {
     lifetime: Lifetime.SINGLETON,
     injectionMode: InjectionMode.CLASSIC
   })
@@ -28,7 +28,7 @@ container.register({
 // REPOSITORIES
 container.register({
   iuserRepository: asClass(
-    require("../repositories/Vendor/MongoDb/UserRepository"),
+    require("@repositories/Vendor/MongoDb/UserRepository"),
     {
       lifetime: Lifetime.SINGLETON,
       injectionMode: InjectionMode.CLASSIC
@@ -39,14 +39,14 @@ container.register({
 
 // SERVICES
 container.register({
-  userService: asClass(require("../services/UserService"), {
+  userService: asClass(require("@services/UserService"), {
     lifetime: Lifetime.SINGLETON,
     injectionMode: InjectionMode.CLASSIC
   })
 });
 
 container.register({
-  loggerService: asClass(require("../services/LoggerService"), {
+  loggerService: asClass(require("@services/LoggerService"), {
     lifetime: Lifetime.SINGLETON,
     injectionMode: InjectionMode.CLASSIC
   })
@@ -55,7 +55,7 @@ container.register({
 
 // MIDDLEWARE
 container.register({
-  ContentTypeHandler: asClass(require("../middlewares/ContentTypeHandler"), {
+  ContentTypeHandler: asClass(require("@middlewares/ContentTypeHandler"), {
     lifetime: Lifetime.SINGLETON,
     injectionMode: InjectionMode.CLASSIC
   })
@@ -63,7 +63,7 @@ container.register({
 
 container.register({
   ErrorResponseMiddleware: asClass(
-    require("../middlewares/ErrorResponseMiddleware"),
+    require("@middlewares/ErrorResponseMiddleware"),
     {
       lifetime: Lifetime.SINGLETON,
       injectionMode: InjectionMode.CLASSIC
@@ -72,7 +72,7 @@ container.register({
 });
 
 container.register({
-  AuthMiddleware: asClass(require("../middlewares/AuthMiddleware"), {
+  AuthMiddleware: asClass(require("@middlewares/AuthMiddleware"), {
     lifetime: Lifetime.SINGLETON,
     injectionMode: InjectionMode.CLASSIC
   })
@@ -82,7 +82,7 @@ container.register({
 // CONTROLLERS
 container.register({
   mainAPIController: asClass(
-    require("../controllers/api/MainAPIController"),
+    require("@controllers/api/MainAPIController"),
     {
       lifetime: Lifetime.SINGLETON,
       injectionMode: InjectionMode.CLASSIC
@@ -92,7 +92,7 @@ container.register({
 
 container.register({
   authenticationAPIController: asClass(
-    require("../controllers/api/AuthenticationAPIController"),
+    require("@controllers/api/AuthenticationAPIController"),
     {
       lifetime: Lifetime.SINGLETON,
       injectionMode: InjectionMode.CLASSIC

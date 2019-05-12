@@ -1,6 +1,6 @@
 const Joi = require('joi');
 
-const ModelBase = require('../ModelBase');
+const ModelBase = require('@models/Domain/ModelBase');
 const DbQuery = require('./schema');
 
 class User extends ModelBase {

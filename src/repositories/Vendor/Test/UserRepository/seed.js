@@ -1,5 +1,5 @@
 
-const User = require('../../../../models/Domain/User');
+const User = require('@models/Domain/User');
 
 // Simple seed generator
 module.exports = () => [

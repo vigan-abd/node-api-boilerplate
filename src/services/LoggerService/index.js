@@ -1,6 +1,6 @@
 const winston = require('winston');
 const CloudWatchTransport = require('winston-aws-cloudwatch');
-const config = require('../../config');
+const config = require('@config');
 
 class LoggerService {
 

@@ -1,9 +1,9 @@
-const UserService = require('../../../services/UserService'); // USED ONLY FOR INTELLISENSE ISSUES
+const UserService = require('@services/UserService'); // USED ONLY FOR INTELLISENSE ISSUES
 
 class MainAPIController {
 
   /**
-   * @api {get} /api/v1 Main route
+   * @api {get} /api Main route
    * @apiName MainRoute
    * @apiGroup Main
    * @apiVersion  0.1.0

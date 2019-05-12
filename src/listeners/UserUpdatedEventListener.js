@@ -1,9 +1,9 @@
-const ListenerBase = require('./ListenerBase');
-const UserUpdatedEvent = require('../events/UserUpdatedEvent');
-const UserService = require('../services/UserService');
-const LoggerService = require('../services/LoggerService');
+const ListenerBase = require('@listeners/ListenerBase');
+const UserUpdatedEvent = require('@events/UserUpdatedEvent');
+const UserService = require('@services/UserService');
+const LoggerService = require('@services/LoggerService');
 
-const { APP_ENV } = require('../config');
+const { APP_ENV } = require('@config');
 
 class UserUpdatedEventListener extends ListenerBase {
   /**

@@ -1,4 +1,4 @@
-const LoggerService = require('../services/LoggerService');
+const LoggerService = require('@services/LoggerService');
 
 class ErrorResponseMiddleware {
   /**

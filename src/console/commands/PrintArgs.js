@@ -1,5 +1,5 @@
-const print = require('../../helpers/PrintHelper');
-const arg = require('../../helpers/ArgHelper');
+const print = require('@helpers/PrintHelper');
+const arg = require('@helpers/ArgHelper');
 
 class PrintArgs {
   run (argv) {

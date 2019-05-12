@@ -1,4 +1,4 @@
-const EventBase = require('./EventBase');
+const EventBase = require('@events/EventBase');
 
 class UserLoggedInEvent extends EventBase {
 

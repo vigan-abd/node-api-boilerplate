@@ -1,5 +1,5 @@
 const { expect } = require('chai'); // We use expect to determine case results
-const User = require('../../../../../models/Domain/User');
+const User = require('@models/Domain/User');
 const UserRepository = require('../index');
 
 module.exports = (container) => {

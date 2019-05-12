@@ -2,15 +2,15 @@ const express = require('express');
 const createError = require('http-errors');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-const HttpsMiddleware = require('./src/middlewares/HttpsMiddleware');
-const CorsMiddleware = require('./src/middlewares/CorsMiddleware');
+const HttpsMiddleware = require('@middlewares/HttpsMiddleware');
+const CorsMiddleware = require('@middlewares/CorsMiddleware');
 
 
 // APP SETUP
 const app = express();
-const config = require('./src/config');
-const container = require('./src/containers/web');
-const routes = require('./src/routes');
+const config = require('@config');
+const container = require('@containers/web');
+const routes = require('@routes');
 
 // SECURITY CONFIG
 app.set('trust proxy', 1);

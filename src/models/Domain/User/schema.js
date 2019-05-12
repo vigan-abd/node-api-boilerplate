@@ -1,4 +1,4 @@
-const dbAdapter = require('../../../helpers/DbAdapter');
+const dbAdapter = require('@helpers/DbAdapter');
 const mongoosePaginate = require('mongoose-paginate-v2');
 const uuid = require('uuid');
 

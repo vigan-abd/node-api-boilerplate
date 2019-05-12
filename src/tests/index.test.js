@@ -1,6 +1,7 @@
-const container = require('../containers/test'); // Load awilix container for test environment
-const dbAdapter = require('../helpers/DbAdapter');
-const TestHelper = require('../helpers/TestHelper');
+require('module-alias/register');
+const container = require('@containers/test'); // Load awilix container for test environment
+const dbAdapter = require('@helpers/DbAdapter');
+const TestHelper = require('@helpers/TestHelper');
 
 global.TestHelper = TestHelper; // Make TestHelper globally available for all tests so we don't need to require it manually
 

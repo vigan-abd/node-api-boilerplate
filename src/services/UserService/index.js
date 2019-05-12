@@ -1,9 +1,9 @@
-const IUserRepository = require('../../repositories/Interfaces/IUserRepository');
-const UserDefinedException = require('../../models/Business/Exeption/UserDefinedException');
-const User = require('../../models/Domain/User');
-const SecurityHelper = require('../../helpers/SecurityHelper');
-const StringHelper = require('../../helpers/StringHelper');
-const config = require('../../config');
+const IUserRepository = require('@repositories/Interfaces/IUserRepository');
+const UserDefinedException = require('@models/Business/Exeption/UserDefinedException');
+const User = require('@models/Domain/User');
+const SecurityHelper = require('@helpers/SecurityHelper');
+const StringHelper = require('@helpers/StringHelper');
+const config = require('@config');
 
 
 class UserService {

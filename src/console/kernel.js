@@ -1,7 +1,7 @@
-const container = require('../containers/cli');
-const arg = require('../helpers/ArgHelper');
-const print = require('../helpers/PrintHelper');
-const routes = require('../routes/console')(container);
+const container = require('@containers/cli');
+const arg = require('@helpers/ArgHelper');
+const print = require('@helpers/PrintHelper');
+const routes = require('@routes/console')(container);
 
 module.exports = () => {
   // CONFIG

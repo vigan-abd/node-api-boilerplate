@@ -1,5 +1,5 @@
 const EmitterBase = require('events');
-const EventBase = require('../../events/EventBase');
+const EventBase = require('@events/EventBase');
 
 class EventDispatcher extends EmitterBase {
 

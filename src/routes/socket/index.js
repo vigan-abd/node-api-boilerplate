@@ -1,4 +1,4 @@
-const io = require('../../helpers/SocketAdapter');
+const io = require('@helpers/SocketAdapter');
 
 const register = (container) => {
   const loggerService = container.resolve('loggerService');

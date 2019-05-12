@@ -1,4 +1,4 @@
-const dbAdapter = require('../DbAdapter');
+const dbAdapter = require('@helpers/DbAdapter');
 
 class StringHelper {
  
