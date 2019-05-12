@@ -7,6 +7,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "cli": "NODE_ENV=development node src/bin/cli",
+    "cli:staging": "NODE_ENV=staging node src/bin/cli",
+    "cli:prod": "NODE_ENV=production node src/bin/cli",
     "start": "npm run start:dev",
     "start:dev": "PORT=4001 NODE_ENV=development nodemon ./src/bin/www",
     "start:staging": "PORT=4001 NODE_ENV=staging nodemon ./src/bin/www",

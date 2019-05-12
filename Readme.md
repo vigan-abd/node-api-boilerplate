@@ -106,4 +106,13 @@ In order to run test you just have to run the following command:
 npm run test
 ```
 
+## Running CLI Env
+In order to run cli commands supported from your app run the following command:
+```terminal
+npm run cli -- <args>
+```
+In staging or production run:
+```terminal
+npm run cli:<staging|prod> -- <args>
+
 If you're using Docker don't forget to access the container first as mentioned in "API Documentation" section!

@@ -1,15 +1,20 @@
 const ListenerBase = require('./ListenerBase');
 const UserUpdatedEvent = require('../events/UserUpdatedEvent');
 const UserService = require('../services/UserService');
+const LoggerService = require('../services/LoggerService');
+
+const { APP_ENV } = require('../config');
 
 class UserUpdatedEventListener extends ListenerBase {
   /**
    * 
    * @param {UserService} userService 
+   * @param {LoggerService} loggerService
    */
-  constructor(userService) {
+  constructor(userService, loggerService) {
     super();
     this.userService = userService;
+    this.loggerService = loggerService;
 
     this.handle = this.handle.bind(this);
   }
