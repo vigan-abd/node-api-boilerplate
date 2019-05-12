@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2016",
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@config": [
+        "src/config/index"
+      ],
+      "@config/*": [
+        "src/config/*"
+      ],
+      "@console/*": [
+        "src/console/*"
+      ],
+      "@containers/*": [
+        "src/containers/*"
+      ],
+      "@controllers/*": [
+        "src/controllers/*"
+      ],
+      "@events/*": [
+        "src/events/*"
+      ],
+      "@helpers/*": [
+        "src/helpers/*"
+      ],
+      "@listeners/*": [
+        "src/listeners/*"
+      ],
+      "@middlewares/*": [
+        "src/middlewares/*"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ],
+      "@routes": [
+        "src/routes/index"
+      ],
+      "@routes/*": [
+        "src/routes/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@repositories/*": [
+        "src/repositories/*"
+      ],
+    }
+  },
+  "include": [
+    "src/**/*.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ]
+}
