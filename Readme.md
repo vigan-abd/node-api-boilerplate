@@ -16,7 +16,7 @@ This repository contains the Node App developed using Node JS and other server s
 ## Setup
 
 ### Prequises
-In order to run the project you must use have configured the following softwares/services in your hosting environment:
+In order to run the project you must have configured the following softwares/services in your hosting environment:
 * Docker - [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
 * Docker-Compose - [https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-16-04)
 
