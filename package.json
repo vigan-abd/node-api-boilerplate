@@ -46,7 +46,7 @@
     "joi": "^13.6.0",
     "jwt-simple": "^0.5.1",
     "module-alias": "^2.2.0",
-    "mongoose": "^5.2.12",
+    "mongoose": "^5.7.5",
     "mongoose-paginate-v2": "^1.0.12",
     "node-cron": "^2.0.3",
     "node-env-file": "^0.1.8",
